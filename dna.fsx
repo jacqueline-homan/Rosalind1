@@ -32,6 +32,14 @@ let countAnyLetter (input:string) (letter:char) =
     |> Seq.filter (fun c -> c = letter)
     |> Seq.length
 
+let dnaCount (dna:string) = 
+    let As::Cs::Gs::Ts::_ = 
+        ['A';'C';'G';'T']
+
+       
+
+
+    sprintf "%i %i %i %i" As Cs Gs Ts
 
 
 
@@ -82,11 +90,11 @@ let program (dna:string) =
     sprintf "%i %i %i %i" As Cs Gs Ts
 
 
-let input = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
+let inputDna = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
 
 let output = "20 12 17 21"
 
-let test = program input
+let test = program inputDna
 
 //program input = 
 

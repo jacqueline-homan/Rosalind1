@@ -35,5 +35,7 @@
     <None Include="rosalind_dna.txt" />
     <None Include="dna.fsx" />
     <None Include="list.fsx" />
+    <None Include="Script.fsx" />
+    <None Include="rosalind_dna_3_output.txt" />
   </ItemGroup>
 </Project>

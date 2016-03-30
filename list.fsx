@@ -1,10 +1,10 @@
 ﻿// intro to list and matching
 
-let xs = [1;2;3;4;5]
+let xs = [1;2;3;4;5] //list
 
-let shorter = [1.. 2 .. 5]
+let shorter = [1.. 2 .. 5] //range
 
-let array = [|1;2;3;4;5|]
+let array = [|1;2;3;4;5|] //array
 
 let sequence = seq { for i in 1 ..5 -> i }
 
@@ -23,4 +23,7 @@ let safeMatch (xs:int list) =
     | [] -> printfn "EMPTY"
     | head::tail ->
          printfn "HEAD IS %i" head
+
+let numbers = [1;2;3;4;]
+let sum = numbers |> List.fold(fun state num -> state + num) 0 numbers
 
