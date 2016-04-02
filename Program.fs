@@ -2,7 +2,7 @@
 open System.IO
 
 
-
+///Rosalind problem # 1
 let countAnyLetter (inputFromFile:string) (letter:char) =
    inputFromFile
    |> Seq.filter (fun c -> c = letter)
@@ -17,12 +17,15 @@ let program (dna:string) =
 
    printfn "%i %i %i %i" As Cs Gs Ts
 
+
+
+
 [<EntryPoint>]
 let main argv = 
     printfn "Welcome to F# lessons!" 
 
     //let path = @"/home/jacque/Projects/F-sharp/Rosalind/Rosalind/rosalind_dna_3_output.txt"
-    let path = @"/home/jacque/Downloads/rosalind_dna (4).txt"
+    let path = @"/home/jacque/Downloads/rosalind_dna.txt"
  
     let inputFromFile = File.ReadAllText(path) 
 
